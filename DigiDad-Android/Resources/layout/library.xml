@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="#000"
+   >
+    <LinearLayout
+        
+        android:orientation="vertical"
+        android:background="#000"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:id="@+id/linearLayout1" >
+        <android.support.v7.widget.Toolbar
+            android:minWidth="25px"
+            android:minHeight="25px"
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+              android:elevation="4dp"
+   android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+   app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:id="@+id/toolbar1"
+             android:background="#4CA0F0"/>
+        <LinearLayout
+             android:paddingBottom="40px"
+                android:background="#4CA0F0"
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout12" >
+        
+        <android.support.constraint.ConstraintLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+               android:background="#4CA0F0"
+            android:id="@+id/constraintLayout3" >
+
+       
+        
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+               android:background="#4CA0F0"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout10">
+        
+        <LinearLayout
+               android:background="#4CA0F0"
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout8" 
+            >
+             <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout9" >
+                <TextView
+                    android:text="DDAT-APP!"
+                    android:layout_marginLeft="40px"
+                    android:layout_marginRight="40px"
+                    android:textColor="@android:color/white"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView11" />
+             <TextView
+                    android:text="Digi-Dad Advice Anytime"
+                    android:layout_marginLeft="40px"
+                    android:layout_marginRight="40px"
+                                android:paddingBottom="20px"
+                    android:textSize="20px"
+                    android:textColor="@android:color/white"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="40px"
+                    android:id="@+id/textView12" />
+
+
+                </LinearLayout>
+
+            
+
+                                       
+            </LinearLayout>
+            </LinearLayout>
+                                    <LinearLayout
+                         app:layout_constraintEnd_toEndOf="parent"
+                        android:orientation="horizontal"
+                        android:minWidth="25px"
+                android:layout_marginRight="40px"
+                        android:minHeight="25px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/linearLayout11" >
+                <ImageView
+                    android:src="@android:drawable/ic_menu_camera"
+                    android:layout_width="95px"
+                    android:layout_height="95px"
+                    android:id="@+id/imageView15" />
+                <ImageView
+                    android:src="@android:drawable/ic_search_category_default"
+                    android:layout_width="95px"
+                    android:layout_height="95px"
+                    android:id="@+id/imageView16" />
+                <ImageView
+                    android:src="@mipmap/profile"
+                    android:layout_width="95px"
+                    android:layout_height="95px"
+                    android:id="@+id/imageView17" />
+
+
+
+
+
+                        </LinearLayout>
+                 </android.support.constraint.ConstraintLayout>
+        
+           </LinearLayout>
+        <TextView
+            android:textColor="@android:color/white"
+            android:text="Recent"
+            android:layout_marginLeft="40px"
+            android:layout_marginTop="80px"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView13" />
+
+
+        <HorizontalScrollView
+            
+            android:layout_marginTop="40px"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_marginLeft="40px"
+            android:layout_width="wrap_content"
+            android:layout_height="350px"
+            android:id="@+id/horizontalScrollView1" >
+     
+           
+            
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout2" >
+                <ImageView
+                    android:src="@mipmap/cooking"
+                    android:layout_width="250px"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageView1" 
+                    android:layout_marginRight="20px"/>
+                <ImageView
+                    android:src="@mipmap/homework"
+                android:layout_width="250px"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20px"
+                  
+                    android:id="@+id/imageView2" />
+                <ImageView
+                    android:src="@mipmap/swimming"
+                             android:layout_width="250px"
+                    android:layout_height="match_parent"
+                     android:layout_marginTop="20px"
+                    android:layout_marginRight="20px"
+                    android:id="@+id/imageView3" />
+                <ImageView
+                    android:src= "@mipmap/dating"
+                       android:layout_width="250px"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20px"
+                    
+                    android:id="@+id/imageView4" />
+   
+
+
+            </LinearLayout>
+                      
+        </HorizontalScrollView>
+
+        
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_marginTop="80px"
+            android:layout_marginLeft=" 40px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout13" >
+            <ImageView
+                android:src="@mipmap/history"
+                android:layout_width="75px"
+                android:layout_height="75px"
+                android:id="@+id/imageView18" />
+        
+            <TextView
+                android:text="History"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40px"
+                  android:textColor="@android:color/white"
+                android:textAlignment="center"
+                android:id="@+id/textView15" />
+
+
+
+            </LinearLayout>
+
+
+        <android.support.constraint.ConstraintLayout
+            android:minWidth="25px"
+            android:layout_marginTop="40px"
+            android:layout_marginLeft="40px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/constraintLayout4" >
+
+        <ImageView
+            android:src="@mipmap/download"
+            android:layout_width="75px"
+            android:layout_height="75px"
+            android:id="@+id/imageView19" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                  android:layout_marginLeft="40px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout15" 
+                 app:layout_constraintLeft_toRightOf="@+id/imageView19">
+
+            <TextView
+                android:text="Downloads"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               
+                android:textColor="@android:color/white"
+               
+                android:id="@+id/textView16" />
+                <TextView
+                    android:text="4 Videos"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/textView19" />
+
+
+            </LinearLayout>
+            <ImageView
+                android:src="@mipmap/purchased"
+                android:layout_width="75px"
+                android:layout_height="75px"
+                android:id="@+id/imageView21"
+                 
+                android:layout_marginRight="40px"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+
+        </android.support.constraint.ConstraintLayout>
+
+            <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+            
+            android:layout_marginTop="40px"
+            android:layout_marginLeft="40px"
+           
+            
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@id/linearLayout14" >
+            <ImageView
+                android:src="@mipmap/play"
+                android:layout_width="75px"
+                android:layout_height="75px"
+                android:id="@+id/imageView20" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:layout_marginLeft="40px"
+                android:minHeight="25px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout14" >
+                <TextView
+                    android:text="Your Videos"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    
+                android:textColor="@android:color/white"
+                    android:id="@+id/textView17" />
+                <TextView
+                    android:text="4 Videos"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    
+                android:textColor="@android:color/white"
+                    android:id="@+id/textView18" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            
+            android:layout_marginTop="40px"
+            android:layout_marginLeft="40px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout16"
+          >
+
+
+        <ImageView
+                android:layout_marginRight="40px"
+            android:src="@mipmap/purchase"
+            android:layout_width="75px"
+            android:layout_height="75px"
+            android:id="@+id/imageView22" />
+            <TextView
+                android:text="Purchases"
+                    android:textColor="@android:color/white"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/textView20" />
+
+
+            </LinearLayout>
+
+
+
+            <TextView
+        android:text="Playlists"
+        
+            android:layout_marginTop="40px"
+            android:layout_marginLeft="40px"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+           android:textColor="@android:color/white"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView21" />
+        <LinearLayout
+            
+            android:layout_marginTop="40px"
+            android:layout_marginLeft="40px"
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout17" >
+            <ImageView
+                android:src="@mipmap/plus"
+                android:layout_width="75px"
+                android:layout_height="75px"
+                android:id="@+id/imageView23" />
+            <TextView
+                android:text="New Playlist"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+            android:layout_marginLeft="40px"
+  
+                
+           android:textColor="@android:color/white"
+                android:id="@+id/textView22" />
+            
+
+            </LinearLayout>
+
+                    <LinearLayout
+            
+            android:layout_marginTop="40px"
+            android:layout_marginLeft="40px"
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout18" >
+                <ImageView
+                    android:src="@mipmap/cooking"
+                    android:layout_width="75px"
+                    android:layout_height="75px"
+                    android:id="@+id/imageView24" />
+            <TextView
+                android:text="Cooking"
+                         android:layout_marginLeft="40px"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                
+                
+           android:textColor="@android:color/white"
+                android:id="@+id/textView23" />
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        app:itemIconTint="@android:color/white"
+        app:itemTextAppearanceActive="@style/AppTheme"
+        
+        android:background="#4CA0F0"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/navigation"
+        android:layout_marginTop="0.0dp" />
+
+
+
+</RelativeLayout>

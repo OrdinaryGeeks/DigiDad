@@ -1,0 +1,469 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="#000"
+   >
+    <LinearLayout
+        
+        android:orientation="vertical"
+        android:background="#000"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:id="@+id/linearLayout1" >
+        <android.support.v7.widget.Toolbar
+            android:minWidth="25px"
+            android:minHeight="25px"
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+              android:elevation="4dp"
+   android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+   app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:id="@+id/toolbar1"
+             android:background="#4CA0F0"/>
+        <LinearLayout
+                android:background="#4CA0F0"
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout12" >
+        
+        <android.support.constraint.ConstraintLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+               android:background="#4CA0F0"
+            android:id="@+id/constraintLayout3" >
+
+       
+        
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+               android:background="#4CA0F0"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout10">
+        
+        <LinearLayout
+               android:background="#4CA0F0"
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout8" 
+            >
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout9" >
+                <TextView
+                    android:text="DDAT-APP!"
+                    android:layout_marginLeft="40px"
+                    android:layout_marginRight="40px"
+                    android:textColor="@android:color/white"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView11" />
+                <TextView
+                    android:text="Digi-Dad Advice Anytime"
+                    android:layout_marginLeft="40px"
+                    android:layout_marginRight="40px"
+                                android:paddingBottom="20px"
+                    android:textSize="20px"
+                    android:textColor="@android:color/white"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="40px"
+                    android:id="@+id/textView12" />
+
+
+                </LinearLayout>
+
+            
+
+                                       
+            </LinearLayout>
+            </LinearLayout>
+                                    <LinearLayout
+                         app:layout_constraintEnd_toEndOf="parent"
+                        android:orientation="horizontal"
+                        android:minWidth="25px"
+                android:layout_marginRight="40px"
+                        android:minHeight="25px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/linearLayout11" >
+                <ImageView
+                    android:src="@android:drawable/ic_menu_camera"
+                    android:layout_width="95px"
+                    android:layout_height="95px"
+                    android:id="@+id/imageView15" />
+                <ImageView
+                    android:src="@android:drawable/ic_search_category_default"
+                    android:layout_width="95px"
+                    android:layout_height="95px"
+                    android:id="@+id/imageView16" />
+                <ImageView
+                    android:src="@mipmap/profile"
+                    android:layout_width="95px"
+                    android:layout_height="95px"
+                    android:id="@+id/imageView17" />
+
+
+
+
+
+                        </LinearLayout>
+                 </android.support.constraint.ConstraintLayout>
+        <HorizontalScrollView
+               android:background="#4CA0F0"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_marginTop="40px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/horizontalScrollView4" >
+            <LinearLayout
+                android:background="#4CA0F0"
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout5" >
+
+            <TextView
+                android:text="All"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                    android:layout_marginLeft="40px"
+                    android:layout_marginRight="40px"
+                    android:textColor="@android:color/white"
+                android:id="@+id/textView1" />
+                <TextView
+                    android:text="Cooking"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                                   android:layout_marginLeft="40px"
+                    android:layout_marginRight="40px"
+                      android:textColor="@android:color/white"
+                    android:id="@+id/textView2" />
+                <TextView
+                    android:text="Homework"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                                   android:layout_marginLeft="40px"
+                      android:textColor="@android:color/white"
+                    android:layout_marginRight="40px"
+                    android:id="@+id/textView3" />
+                <TextView
+                    android:text="Swimming"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                                   android:layout_marginLeft="40px"
+                      android:textColor="@android:color/white"
+                    android:layout_marginRight="40px"
+                    android:id="@+id/textView4" />
+                <TextView
+                    android:text="Dating"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                      android:textColor="@android:color/white"
+                    android:id="@+id/textView10" />
+
+   
+            </LinearLayout>
+
+
+            </HorizontalScrollView>
+           </LinearLayout>
+            
+            <HorizontalScrollView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/horizontalScrollView1" >
+            
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout2" >
+                <ImageView
+                    android:src="@mipmap/cooking"
+                    android:layout_width="350px"
+                    android:layout_height="350px"
+                    android:id="@+id/imageView1" />
+                <ImageView
+                    android:src="@mipmap/homework"
+               android:layout_width="350px"
+                    android:layout_height="350px"
+                    android:id="@+id/imageView2" />
+                <ImageView
+                    android:src="@mipmap/swimming"
+                         android:layout_width="350px"
+                    android:layout_height="350px"
+                    android:id="@+id/imageView3" />
+                <ImageView
+                    android:src= "@mipmap/dating"
+                             android:layout_width="350px"
+                    android:layout_height="350px"
+                    android:id="@+id/imageView4" />
+        
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+        </HorizontalScrollView>
+        <android.support.constraint.ConstraintLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="35px"
+            android:id="@+id/constraintLayout1" >
+
+              <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout2">
+                <TextView
+                     android:textAlignment="center"
+            android:text="Just Arrived"
+            android:textSize="30px"
+            
+            android:layout_marginLeft="15px"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+  android:textColor="@android:color/white"                    android:id="@+id/textView6" />
+                
+        
+
+        </LinearLayout>
+        <LinearLayout
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="35px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40px"
+            android:id="@+id/linearLayout3" >
+                <TextView
+                            android:text="More"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:textSize="30px"
+  android:textColor="@android:color/white"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView7" />
+           
+        </LinearLayout>
+
+
+            </android.support.constraint.ConstraintLayout>
+                
+
+        <HorizontalScrollView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/horizontalScrollView2" >
+
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout3" >
+            <ImageView
+                android:src="@mipmap/mickey"
+                        android:layout_width="250px"
+                    android:layout_height="250px"
+                android:id="@+id/imageView6" />
+            <ImageView
+                android:src="@mipmap/cmarvel"
+                                android:layout_width="250px"
+                    android:layout_height="250px"
+                android:id="@+id/imageView7" />
+            <ImageView
+                android:src="@mipmap/randoheroes"
+                              android:layout_width="250px"
+                    android:layout_height="250px"
+                android:id="@+id/imageView8" />
+            <ImageView
+                android:src="@mipmap/superhero1"
+                            android:layout_width="250px"
+                    android:layout_height="250px"
+                android:id="@+id/imageView9" />
+            <ImageView
+                android:src="@mipmap/ironman"
+                            android:layout_width="250px"
+                    android:layout_height="250px"
+                android:id="@+id/imageView10" />
+
+
+            
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+        <android.support.constraint.ConstraintLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="35px"
+            android:id="@+id/constraintLayout2" >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout7" >
+            <TextView
+               android:textAlignment="center"
+            android:text="Trending"
+            android:textSize="30px"
+            
+            android:layout_marginLeft="15px"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+             android:textColor="@android:color/white"
+                android:id="@+id/textView8" />
+                </LinearLayout>
+            <LinearLayout    
+                app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="35px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40px"
+                android:id="@+id/linearLayout6" >
+            <TextView
+                    android:text="More"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:textSize="30px"
+                  android:textColor="@android:color/white"
+                android:layout_height="match_parent"
+                android:id="@+id/textView9" />
+
+            </LinearLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
+        <HorizontalScrollView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/horizontalScrollView3" >
+            
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/linearLayout4" >
+                <ImageView
+                    android:src="@mipmap/butterfly1"
+                           android:layout_width="250px"
+                    android:layout_height="250px"
+                    android:id="@+id/imageView11" />
+                <ImageView
+                    android:src="@mipmap/butterfly2"
+                              android:layout_width="250px"
+                    android:layout_height="250px"
+                    android:id="@+id/imageView12" />
+                <ImageView
+                    android:src="@mipmap/butterfly3"
+                             android:layout_width="250px"
+                    android:layout_height="250px"
+                    android:id="@+id/imageView13" />
+                <ImageView
+                    android:src="@mipmap/butterfly4"
+                        android:layout_width="250px"
+                    android:layout_height="250px"
+                    android:id="@+id/imageView14" />
+
+
+            </LinearLayout>
+
+
+        </HorizontalScrollView>
+             
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        app:itemIconTint="@android:color/white"
+        app:itemTextAppearanceActive="@style/AppTheme"
+        
+        android:background="#4CA0F0"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/navigation"
+        android:layout_marginTop="0.0dp" />
+
+
+
+</RelativeLayout>

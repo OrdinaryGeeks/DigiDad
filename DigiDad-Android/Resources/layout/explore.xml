@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="#000"
+   >
+    <LinearLayout
+        
+        android:orientation="vertical"
+        android:background="#000"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:id="@+id/explore1" >
+        <android.support.v7.widget.Toolbar
+            android:minWidth="25px"
+            android:minHeight="25px"
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+              android:elevation="4dp"
+   android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+   app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:id="@+id/toolbar1"
+             android:background="#4CA0F0"/>
+        <LinearLayout
+             android:paddingBottom="40px"
+                android:background="#4CA0F0"
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout12" >
+        
+        <android.support.constraint.ConstraintLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+               android:background="#4CA0F0"
+            android:id="@+id/constraintLayout3" >
+
+       
+        
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+               android:background="#4CA0F0"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout10">
+        
+        <LinearLayout
+               android:background="#4CA0F0"
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout8" 
+            >
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout9" >
+                <TextView
+                    android:text="DDAT-APP!"
+                    android:layout_marginLeft="40px"
+                    android:layout_marginRight="40px"
+                    android:textColor="@android:color/white"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView11" />
+             <TextView
+                    android:text="Digi-Dad Advice Anytime"
+                    android:layout_marginLeft="40px"
+                    android:layout_marginRight="40px"
+                                android:paddingBottom="20px"
+                    android:textSize="20px"
+                    android:textColor="@android:color/white"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="40px"
+                    android:id="@+id/textView12" />
+
+
+                </LinearLayout>
+
+            
+
+                                       
+            </LinearLayout>
+            </LinearLayout>
+                                    <LinearLayout
+                         app:layout_constraintEnd_toEndOf="parent"
+                        android:orientation="horizontal"
+                        android:minWidth="25px"
+                android:layout_marginRight="40px"
+                        android:minHeight="25px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/linearLayout11" >
+                <ImageView
+                    android:src="@android:drawable/ic_menu_camera"
+                    android:layout_width="95px"
+                    android:layout_height="95px"
+                    android:id="@+id/imageView15" />
+                <ImageView
+                    android:src="@android:drawable/ic_search_category_default"
+                    android:layout_width="95px"
+                    android:layout_height="95px"
+                    android:id="@+id/imageView16" />
+                <ImageView
+                    android:src="@mipmap/profile"
+                    android:layout_width="95px"
+                    android:layout_height="95px"
+                    android:id="@+id/imageView17" />
+
+
+
+
+
+                        </LinearLayout>
+                 </android.support.constraint.ConstraintLayout>
+        
+           </LinearLayout>
+        <ScrollView
+            android:layout_marginTop="40px"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           
+            android:id="@+id/exploreHomeScrollView1" >
+           
+            
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout2" >
+                <ImageView
+                    android:src="@mipmap/cooking"
+                    android:layout_width="match_parent"
+                    android:layout_height="350px"
+                    android:id="@+id/cookingExplore"/>
+                <ImageView
+                    android:src="@mipmap/homework"
+               android:layout_width="match_parent"
+                    android:layout_height="350px"
+                    android:layout_marginTop="20px"
+                    android:id="@+id/imageView2" />
+                <ImageView
+                    android:src="@mipmap/swimming"
+                         android:layout_width="match_parent"
+                    android:layout_height="350px"
+                     android:layout_marginTop="20px"
+                    android:id="@+id/imageView3" />
+                <ImageView
+                    android:src= "@mipmap/dating"
+                             android:layout_width="match_parent"
+                    android:layout_height="350px"
+                    
+                    android:id="@+id/imageView4" />
+        
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </ScrollView>
+
+
+
+
+        </LinearLayout>
+    <LinearLayout
+        
+        android:orientation="vertical"
+        android:background="#000"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:id="@+id/explore2" >
+        <android.support.v7.widget.Toolbar
+            android:minWidth="25px"
+            android:minHeight="25px"
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+              android:elevation="4dp"
+   android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+   app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:id="@+id/toolbar1"
+             android:background="#4CA0F0"/>
+        <LinearLayout
+             android:paddingBottom="40px"
+                android:background="#4CA0F0"
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout12" >
+        
+        <android.support.constraint.ConstraintLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+               android:background="#4CA0F0"
+            android:id="@+id/constraintLayout3" >
+
+       
+        
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+               android:background="#4CA0F0"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout10">
+        
+        <LinearLayout
+               android:background="#4CA0F0"
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout8" 
+            >
+         
+                <TextView
+                    android:text="DDAT-APP!"
+                    android:layout_marginLeft="40px"
+                    android:layout_marginRight="40px"
+                    android:textColor="@android:color/white"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/exploreTitleText" />
+        
+
+            
+
+                                       
+            </LinearLayout>
+            </LinearLayout>
+                                    <LinearLayout
+                         app:layout_constraintEnd_toEndOf="parent"
+                        android:orientation="horizontal"
+                        android:minWidth="25px"
+                android:layout_marginRight="40px"
+                        android:minHeight="25px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/linearLayout11" >
+                <ImageView
+                    android:src="@android:drawable/ic_menu_camera"
+                    android:layout_width="95px"
+                    android:layout_height="95px"
+                    android:id="@+id/imageView15" />
+                <ImageView
+                    android:src="@android:drawable/ic_search_category_default"
+                    android:layout_width="95px"
+                    android:layout_height="95px"
+                    android:id="@+id/imageView16" />
+                <ImageView
+                    android:src="@mipmap/profile"
+                    android:layout_width="95px"
+                    android:layout_height="95px"
+                    android:id="@+id/imageView17" />
+
+
+
+
+
+                        </LinearLayout>
+                 </android.support.constraint.ConstraintLayout>
+        
+           </LinearLayout>
+    <GridLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:columnCount="3"
+            android:visibility="gone"
+        android:rowCount="2"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/exploreGridLayout" >
+            <ImageView
+                android:layout_column="0"
+                android:layout_row="0"
+                android:layout_width="300px"
+                android:layout_height="300px"
+                android:src="@mipmap/ironman"
+                android:id="@+id/imageView18" />
+            <ImageView
+                android:layout_column="1"
+                android:layout_row="0"
+                   android:layout_width="300px"
+                android:layout_height="300px"
+                android:src="@mipmap/mickey"
+                android:id="@+id/imageView19" />
+            <ImageView
+                android:layout_column="2"
+                android:layout_row="0"
+                   android:layout_width="300px"
+                android:layout_height="300px"
+                android:src="@mipmap/swimming"
+                android:id="@+id/imageView20" />
+            <ImageView
+                android:layout_column="0"
+                android:layout_row="1"
+                   android:layout_width="300px"
+                android:layout_height="300px"
+                android:src="@mipmap/cooking"
+                android:id="@+id/imageView21" />
+            <ImageView
+                android:layout_column="1"
+                android:layout_row="1"
+                   android:layout_width="300px"
+                android:layout_height="300px"
+                android:src="@mipmap/homework"
+                android:id="@+id/imageView22" />
+            <ImageView
+                    android:layout_column="2"
+                android:layout_row="1"
+                   android:layout_width="300px"
+                android:layout_height="300px"
+                android:src="@mipmap/thor"
+                android:id="@+id/imageView23" />
+
+
+
+
+
+
+        </GridLayout>
+        </LinearLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        app:itemIconTint="@android:color/white"
+        app:itemTextAppearanceActive="@style/AppTheme"
+        
+        android:background="#4CA0F0"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/navigation"
+        android:layout_marginTop="0.0dp" />
+
+
+
+</RelativeLayout>

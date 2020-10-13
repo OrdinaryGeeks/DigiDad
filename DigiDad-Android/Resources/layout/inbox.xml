@@ -1,0 +1,376 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="#000"
+   >
+    <LinearLayout
+        
+        android:orientation="vertical"
+        android:background="#000"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:id="@+id/linearLayout1" >
+        <android.support.v7.widget.Toolbar
+            android:minWidth="25px"
+            android:minHeight="25px"
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+              android:elevation="4dp"
+   android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+   app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:id="@+id/toolbar1"
+             android:background="#4CA0F0"/>
+        <LinearLayout
+                android:background="#4CA0F0"
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:paddingBottom="40px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout12" >
+        
+        <android.support.constraint.ConstraintLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+               android:background="#4CA0F0"
+            android:id="@+id/constraintLayout3" >
+
+       
+        
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+               android:background="#4CA0F0"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout10">
+        
+        <LinearLayout
+               android:background="#4CA0F0"
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout8" 
+            >    <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout9" >
+                <TextView
+                    android:text="DDAT-APP!"
+                    android:layout_marginLeft="40px"
+                    android:layout_marginRight="40px"
+                    android:textColor="@android:color/white"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView11" />
+             <TextView
+                    android:text="Digi-Dad Advice Anytime"
+                    android:layout_marginLeft="40px"
+                    android:layout_marginRight="40px"
+                                android:paddingBottom="20px"
+                    android:textSize="20px"
+                    android:textColor="@android:color/white"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="40px"
+                    android:id="@+id/textView12" />
+
+
+                </LinearLayout>
+            
+
+                                       
+            </LinearLayout>
+            </LinearLayout>
+
+                                    <LinearLayout
+                         app:layout_constraintEnd_toEndOf="parent"
+                        android:orientation="horizontal"
+                        android:minWidth="25px"
+                android:layout_marginRight="40px"
+                        android:minHeight="25px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/linearLayout11" >
+                <ImageView
+                    android:src="@android:drawable/ic_menu_camera"
+                    android:layout_width="95px"
+                    android:layout_height="95px"
+                    android:id="@+id/imageView15" />
+                <ImageView
+                    android:src="@android:drawable/ic_search_category_default"
+                    android:layout_width="95px"
+                    android:layout_height="95px"
+                    android:id="@+id/imageView16" />
+                <ImageView
+                    android:src="@mipmap/profile"
+                    android:layout_width="95px"
+                    android:layout_height="95px"
+                    android:id="@+id/imageView17" />
+
+
+
+
+
+                        </LinearLayout>
+
+            
+                 </android.support.constraint.ConstraintLayout>
+     
+           </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout14" >
+       
+        
+        <TextView
+            android:layout_marginTop="40px"
+            
+            android:text="Latest Comments"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="40px"
+            android:id="@+id/textView13" />
+            <android.support.constraint.ConstraintLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                
+                android:layout_marginTop="40px"
+                android:layout_marginLeft="40px"
+                android:layout_marginBottom="40px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/constraintLayout4" >
+        
+        
+            <ImageView
+                android:src="@mipmap/ironman"
+                android:layout_width="125px"
+                android:layout_height="125px"
+                android:id="@+id/imageView18"
+                    app:layout_constraintStart_toStartOf="parent"
+              />
+            <TextView
+                android:text="Is an app that will  help kids get help with doing things like cooking, homework, dating, etc. It's a self help app."
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="500px"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginRight="20px"
+                android:id="@+id/textView14" 
+                  app:layout_constraintLeft_toRightOf="@+id/imageView18"  
+                    />
+            <ImageView
+                android:src="@mipmap/cooking"
+                android:layout_width="250px"
+                android:layout_height="250px" 
+                  app:layout_constraintLeft_toRightOf="@id/textView14"
+                android:id="@+id/imageView19" />
+
+                </android.support.constraint.ConstraintLayout>
+
+
+
+
+
+            </LinearLayout>
+        <TextView
+            android:layout_marginLeft="40px"
+            android:text="More Notifications"
+            android:textColor="@android:color/white"
+  android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView15" />
+            <android.support.constraint.ConstraintLayout
+        android:minWidth="25px"
+        android:minHeight="25px"   
+                android:layout_marginTop="40px"
+                android:layout_marginLeft="40px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/constraintLayout5">
+            <ImageView
+                android:src="@mipmap/profile"
+                android:layout_width="125px"
+                android:layout_height="125px"
+                android:id="@+id/imageView20" />
+            <TextView
+                            android:textColor="@android:color/white"
+                          android:layout_marginLeft="20px"
+                    android:layout_marginRight="20px"
+                android:text="Is an app that will  help kids get help with doing things like cooking, homework, dating, etc. It's a self help app."
+  android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="500px"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView16"      
+                app:layout_constraintLeft_toRightOf="@+id/imageView20"  
+                    />
+            <ImageView
+                android:src="@mipmap/dating"
+                android:layout_width="250px"
+                android:layout_height="250px"
+                android:id="@+id/imageView24"
+                  app:layout_constraintLeft_toRightOf="@+id/textView16"/>
+
+
+
+            </android.support.constraint.ConstraintLayout>
+        <android.support.constraint.ConstraintLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+               
+                android:layout_marginTop="40px"
+                android:layout_marginLeft="40px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/constraintLayout6" >
+            <ImageView
+                android:src="@mipmap/profile"
+                android:layout_width="125px"
+                android:layout_height="125px"
+                android:id="@+id/imageView21" />
+            <TextView
+                          android:layout_marginLeft="20px"
+                    android:layout_marginRight="20px"
+                            android:textColor="@android:color/white"
+
+                android:text="Is an app that will  help kids get help with doing things like cooking, homework, dating, etc. It's a self help app."
+  android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="500px" 
+                android:layout_height="wrap_content"
+                android:id="@+id/textView17"
+                         app:layout_constraintLeft_toRightOf="@+id/imageView21"  
+                    />
+            <ImageView
+                android:src="@mipmap/homework"
+                android:layout_width="250px"
+                android:layout_height="250px"
+                android:id="@+id/imageView25"  
+                app:layout_constraintLeft_toRightOf="@+id/textView17"  
+/>
+
+
+
+             </android.support.constraint.ConstraintLayout>
+        <android.support.constraint.ConstraintLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+               
+                android:layout_marginTop="40px"
+                android:layout_marginLeft="40px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/constraintLayout7" >
+            <ImageView
+                android:src="@mipmap/profile"
+                android:layout_width="125px"
+                android:layout_height="125px"
+                android:id="@+id/imageView22" />
+            <TextView
+                          android:layout_marginLeft="20px"
+                    android:layout_marginRight="20px"
+                            android:textColor="@android:color/white"
+
+                android:text="Is an app that will  help kids get help with doing things like cooking, homework, dating, etc. It's a self help app."
+  android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="500px"   
+                
+                android:layout_height="wrap_content"
+                android:id="@+id/textView18" 
+                app:layout_constraintLeft_toRightOf="@+id/imageView22"  
+                    />
+            <ImageView
+                android:src="@mipmap/swimming"
+                android:layout_width="250px"
+                android:layout_height="250px"
+                android:id="@+id/imageView26"  
+                app:layout_constraintLeft_toRightOf="@+id/textView18"  
+/>
+
+
+
+        </android.support.constraint.ConstraintLayout>
+        <android.support.constraint.ConstraintLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+               
+                android:layout_marginTop="40px"
+                android:layout_marginLeft="40px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/constraintLayout8" >
+            <ImageView
+                  android:src="@mipmap/profile"
+                android:layout_width="125px"
+                android:layout_height="125px"
+                android:id="@+id/imageView23" />
+            <TextView
+                          android:layout_marginLeft="20px"
+                    android:layout_marginRight="20px"
+                            android:textColor="@android:color/white"
+
+                android:text="Is an app that will  help kids get help with doing things like cooking, homework, dating, etc. It's a self help app."
+  android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="500px"    
+               
+                android:layout_height="wrap_content"
+                android:id="@+id/textView19"
+                app:layout_constraintLeft_toRightOf="@+id/imageView23"  
+                    />
+            <ImageView
+                android:src="@mipmap/cooking"
+                android:layout_width="250px"
+                android:layout_height="250px"
+                android:id="@+id/imageView27"
+                app:layout_constraintLeft_toRightOf="@+id/textView19"  
+/>
+
+
+         </android.support.constraint.ConstraintLayout>
+
+
+    </LinearLayout>
+
+    
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        app:itemIconTint="@android:color/white"
+        app:itemTextAppearanceActive="@style/AppTheme"
+        
+        android:background="#4CA0F0"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/navigation"
+        android:layout_marginTop="0.0dp" />
+
+
+</RelativeLayout>

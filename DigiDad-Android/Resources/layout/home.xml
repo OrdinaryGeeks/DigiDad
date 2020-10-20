@@ -17,14 +17,23 @@
         android:layout_height="wrap_content"
         
         android:id="@+id/linearLayout1" >
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+             android:background="#4CA0F0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/homeTopBar">
+        
         <android.support.v7.widget.Toolbar
             android:minWidth="25px"
             android:minHeight="25px"
             
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-              android:elevation="4dp"
-   android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+             
+   android:theme="@style/Digidad"
    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
             android:id="@+id/toolbar1"
              android:background="#4CA0F0"/>
@@ -43,7 +52,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
                android:background="#4CA0F0"
-            android:id="@+id/constraintLayout3" >
+            android:id="@+id/homeTitleAndIcons" >
 
        
         
@@ -85,7 +94,7 @@
                     android:text="Digi-Dad Advice Anytime"
                     android:layout_marginLeft="40px"
                     android:layout_marginRight="40px"
-                                android:paddingBottom="20px"
+                            
                     android:textSize="20px"
                     android:textColor="@android:color/white"
                     android:textAppearance="?android:attr/textAppearanceMedium"
@@ -139,7 +148,7 @@
             android:layout_marginTop="40px"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/horizontalScrollView4" >
+            android:id="@+id/homeCategorybar" >
             <LinearLayout
                 android:background="#4CA0F0"
                 android:orientation="horizontal"
@@ -198,6 +207,7 @@
 
 
             </HorizontalScrollView>
+                </LinearLayout>
            </LinearLayout>
             
             <HorizontalScrollView
@@ -205,14 +215,14 @@
             android:minHeight="25px"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/horizontalScrollView1" >
+            android:id="@+id/homeMain" >
             
             <LinearLayout
                 android:orientation="horizontal"
                 android:minWidth="25px"
                 android:minHeight="25px"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:id="@+id/linearLayout2" >
                 <ImageView
                     android:src="@mipmap/cooking"
@@ -256,7 +266,8 @@
             android:minHeight="25px"
             android:layout_width="match_parent"
             android:layout_height="35px"
-            android:id="@+id/constraintLayout1" >
+            android:layout_marginTop="20px"
+            android:id="@+id/homeJustArrivedRow" >
 
               <LinearLayout
             android:orientation="horizontal"
@@ -308,7 +319,7 @@
             android:minHeight="25px"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/horizontalScrollView2" >
+            android:id="@+id/homeJustArrivedThumbsRow" >
 
 
 
@@ -318,7 +329,7 @@
             android:minWidth="25px"
             android:minHeight="25px"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:id="@+id/linearLayout3" >
             <ImageView
                 android:src="@mipmap/mickey"
@@ -356,9 +367,10 @@
         <android.support.constraint.ConstraintLayout
             android:minWidth="25px"
             android:minHeight="25px"
+            android:layout_marginTop="20px"
             android:layout_width="match_parent"
             android:layout_height="35px"
-            android:id="@+id/constraintLayout2" >
+            android:id="@+id/homeTrendingRow" >
             <LinearLayout
                 android:orientation="horizontal"
                 android:minWidth="25px"
@@ -405,7 +417,7 @@
             android:minHeight="25px"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/horizontalScrollView3" >
+            android:id="@+id/homeTrendingThumbsRow" >
             
             <LinearLayout
                 android:orientation="horizontal"

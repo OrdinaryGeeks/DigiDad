@@ -2,6 +2,7 @@
 using Android.Content;
 using Android.OS;
 using Android.Runtime;
+using Android.Support.Constraints;
 using Android.Support.Design.Widget;
 using Android.Support.V7.App;
 using Android.Support.V7.Widget;
@@ -15,6 +16,7 @@ namespace DigiDad_Android
     [Activity]
     public class Home : AppCompatActivity, BottomNavigationView.IOnNavigationItemSelectedListener
     {
+        Utils layoutUtils;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -23,16 +25,64 @@ namespace DigiDad_Android
 
             SetSupportActionBar((Android.Support.V7.Widget.Toolbar)FindViewById(Resource.Id.toolbar1));
 
+            Window.SetStatusBarColor(new Android.Graphics.Color(76, 160, 240));
+            
+
+            // clear FLAG_TRANSLUCENT_STATUS flag:
+         //   window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+
+            // add FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS flag to the window
+          //  window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+
+            // finally change the color
+            //window.setStatusBarColor(ContextCompat.getColor(activity, R.color.my_statusbar_color));
 
             var metrics = Resources.DisplayMetrics;
 
-            float height = metrics.HeightPixels;
-            float width = metrics.WidthPixels;
+            int height = metrics.HeightPixels;
+            int width = metrics.WidthPixels;
+
+            layoutUtils = new Utils(width, height);
             //Activity.WindowService..Sc
             SetContentView(Resource.Layout.home);
 
            BottomNavigationView navigationView = (BottomNavigationView)FindViewById(Resource.Id.navigation);
             navigationView.SetOnNavigationItemSelectedListener(this);
+
+            ConstraintLayout titleAndIcon = (ConstraintLayout)FindViewById(Resource.Id.homeTitleAndIcons);
+            HorizontalScrollView categorybar = (HorizontalScrollView)FindViewById(Resource.Id.homeCategorybar);
+            HorizontalScrollView main = (HorizontalScrollView)FindViewById(Resource.Id.homeMain);
+            ConstraintLayout justArrivedRow = (ConstraintLayout)FindViewById(Resource.Id.homeJustArrivedRow);
+            HorizontalScrollView justArrivedThumbs = (HorizontalScrollView)FindViewById(Resource.Id.homeJustArrivedThumbsRow);
+            ConstraintLayout trendingRow = (ConstraintLayout)FindViewById(Resource.Id.homeTrendingRow);
+            HorizontalScrollView trendingThumbsRow = (HorizontalScrollView)FindViewById(Resource.Id.homeTrendingThumbsRow);
+
+            layoutUtils.setHeightClasses(7);
+
+            layoutUtils.setHeight(0, .07);
+            layoutUtils.setHeight(1, .07);
+            layoutUtils.setHeight(2, .20);
+            layoutUtils.setHeight(3, .05);
+            layoutUtils.setHeight(4, .15);
+            layoutUtils.setHeight(5, .05);
+            layoutUtils.setHeight(6, .15);
+
+            layoutUtils.setTopMargin(0, .03);
+            layoutUtils.setTopMargin(1, .03);
+            layoutUtils.setTopMargin(2, .03);
+            layoutUtils.setTopMargin(3, .03);
+            layoutUtils.setTopMargin(4, .02);
+            layoutUtils.setTopMargin(5, .03);
+            layoutUtils.setTopMargin(6, .02);
+
+            layoutUtils.setViewDimensionsHeight(titleAndIcon, 0);
+            layoutUtils.setViewDimensionsHeight(categorybar, 1);
+            layoutUtils.setViewDimensionsHeight(main, 2);
+            layoutUtils.setViewDimensionsHeight(justArrivedRow, 3);
+            layoutUtils.setViewDimensionsHeight(justArrivedThumbs, 4);
+            layoutUtils.setViewDimensionsHeight(trendingRow, 5);
+            layoutUtils.setViewDimensionsHeight(trendingThumbsRow, 6);
+               
 
             TextView[] topRowText = new TextView[5];
 
@@ -46,10 +96,10 @@ namespace DigiDad_Android
             foreach (View view in topRow)
             {
 
-                view.LayoutParameters.Height = int.Parse(Math.Ceiling(height / 10 * 2.5).ToString());
-                view.LayoutParameters.Width = view.LayoutParameters.Height;
-
+                layoutUtils.setViewDimensions(view, 2);
+                
             }
+            
 
             ImageView[] secondRow = new ImageView[5];
 
@@ -62,8 +112,7 @@ namespace DigiDad_Android
             foreach (View view in secondRow)
             {
 
-                view.LayoutParameters.Height = int.Parse(Math.Ceiling(height / 10 * 2.5).ToString());
-                view.LayoutParameters.Width = view.LayoutParameters.Height;
+                layoutUtils.setViewDimensions(view, 4);
 
             }
 
@@ -78,8 +127,7 @@ namespace DigiDad_Android
             foreach (View view in thirdRow)
             {
 
-                view.LayoutParameters.Height = int.Parse(Math.Ceiling(height / 10 * 2.0).ToString());
-               view.LayoutParameters.Width = view.LayoutParameters.Height;
+                layoutUtils.setViewDimensions(view, 6);
 
             }
 
@@ -88,7 +136,7 @@ namespace DigiDad_Android
             //  BottomNavigationView navigation = FindViewById<BottomNavigationView>(Resource.Id.navigation);
 
 
-            //navigation.SetOnNavigationItemSelectedListener(this);
+            //navigation.SetOnNavigationItemSelectedListener(this);*/
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {

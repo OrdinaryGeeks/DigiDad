@@ -154,7 +154,7 @@
                 android:orientation="horizontal"
                 android:minWidth="25px"
                 android:minHeight="25px"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/linearLayout5" >
 
@@ -221,29 +221,30 @@
                 android:orientation="horizontal"
                 android:minWidth="25px"
                 android:minHeight="25px"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:id="@+id/linearLayout2" >
+                android:id="@+id/homeMainLL" >
                 <ImageView
                     android:src="@mipmap/cooking"
                     android:layout_width="350px"
                     android:layout_height="350px"
-                    android:id="@+id/imageView1" />
+                    android:id="@+id/homeCookingImage1"
+                    />
                 <ImageView
                     android:src="@mipmap/homework"
                android:layout_width="350px"
                     android:layout_height="350px"
-                    android:id="@+id/imageView2" />
+                    android:id="@+id/homeHomeworkImage1" />
                 <ImageView
                     android:src="@mipmap/swimming"
                          android:layout_width="350px"
                     android:layout_height="350px"
-                    android:id="@+id/imageView3" />
+                    android:id="@+id/homeSwimmingImage1" />
                 <ImageView
                     android:src= "@mipmap/dating"
                              android:layout_width="350px"
                     android:layout_height="350px"
-                    android:id="@+id/imageView4" />
+                    android:id="@+id/homeDatingImage1" />
         
 
 
@@ -265,27 +266,31 @@
             android:minWidth="25px"
             android:minHeight="25px"
             android:layout_width="match_parent"
-            android:layout_height="35px"
-            android:layout_marginTop="20px"
+            android:layout_height="0dp"
+           
             android:id="@+id/homeJustArrivedRow" >
 
               <LinearLayout
             android:orientation="horizontal"
             android:minWidth="25px"
             android:minHeight="25px"
-            android:layout_width="wrap_content"
+            android:layout_width="200px"
             android:layout_height="wrap_content"
-            android:id="@+id/linearLayout2">
+            android:id="@+id/homeJustArrivedRowLL">
                 <TextView
                      android:textAlignment="center"
             android:text="Just Arrived"
             android:textSize="30px"
-            
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="30px"
+            app:autoSizeMaxTextSize="300px"
             android:layout_marginLeft="15px"
+            android:lines="1"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-  android:textColor="@android:color/white"                    android:id="@+id/textView6" />
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+  android:textColor="@android:color/white"     
+                    android:id="@+id/homeJustArrivedText" />
                 
         
 
@@ -317,7 +322,7 @@
         <HorizontalScrollView
             android:minWidth="25px"
             android:minHeight="25px"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/homeJustArrivedThumbsRow" >
 
@@ -328,11 +333,12 @@
             android:orientation="horizontal"
             android:minWidth="25px"
             android:minHeight="25px"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:id="@+id/linearLayout3" >
+            android:id="@+id/homeJustArrivedThumbsRowLL" >
             <ImageView
                 android:src="@mipmap/mickey"
+                    
                         android:layout_width="250px"
                     android:layout_height="250px"
                 android:id="@+id/imageView6" />
@@ -367,9 +373,9 @@
         <android.support.constraint.ConstraintLayout
             android:minWidth="25px"
             android:minHeight="25px"
-            android:layout_marginTop="20px"
+           
             android:layout_width="match_parent"
-            android:layout_height="35px"
+            android:layout_height="wrap_content"
             android:id="@+id/homeTrendingRow" >
             <LinearLayout
                 android:orientation="horizontal"
@@ -377,7 +383,7 @@
                 android:minHeight="25px"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/linearLayout7" >
+                android:id="@+id/homeTrendingRowLL" >
             <TextView
                android:textAlignment="center"
             android:text="Trending"
@@ -386,7 +392,7 @@
             android:layout_marginLeft="15px"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
              android:textColor="@android:color/white"
                 android:id="@+id/textView8" />
                 </LinearLayout>
@@ -423,9 +429,9 @@
                 android:orientation="horizontal"
                 android:minWidth="25px"
                 android:minHeight="25px"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:id="@+id/linearLayout4" >
+                android:id="@+id/homeTrendingThumbsRowLL" >
                 <ImageView
                     android:src="@mipmap/butterfly1"
                            android:layout_width="250px"

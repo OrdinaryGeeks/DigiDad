@@ -20,6 +20,10 @@ namespace DigiDad_Android
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+
+            Intent intent;
+
+
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
 
 
@@ -56,32 +60,46 @@ namespace DigiDad_Android
             HorizontalScrollView justArrivedThumbs = (HorizontalScrollView)FindViewById(Resource.Id.homeJustArrivedThumbsRow);
             ConstraintLayout trendingRow = (ConstraintLayout)FindViewById(Resource.Id.homeTrendingRow);
             HorizontalScrollView trendingThumbsRow = (HorizontalScrollView)FindViewById(Resource.Id.homeTrendingThumbsRow);
-
+            LinearLayout mainLL = (LinearLayout)FindViewById(Resource.Id.homeMainLL);
+            LinearLayout justArrivedLL = (LinearLayout)FindViewById(Resource.Id.homeJustArrivedRowLL);
+            LinearLayout justArrivedThumbsLL = (LinearLayout)FindViewById(Resource.Id.homeJustArrivedThumbsRowLL);
+            LinearLayout trendingLL = (LinearLayout)FindViewById(Resource.Id.homeTrendingRowLL);
+            LinearLayout trendingThumbsLL = (LinearLayout)FindViewById(Resource.Id.homeTrendingThumbsRowLL);
+            TextView justArrivedText = (TextView)FindViewById(Resource.Id.homeJustArrivedText);
             layoutUtils.setHeightClasses(7);
-
+      // https://img.youtube.com/vi/<insert-youtube-video-id-here>/1.jpg
             layoutUtils.setHeight(0, .07);
             layoutUtils.setHeight(1, .07);
             layoutUtils.setHeight(2, .20);
-            layoutUtils.setHeight(3, .05);
+            layoutUtils.setHeight(3, .03);
             layoutUtils.setHeight(4, .15);
-            layoutUtils.setHeight(5, .05);
+            layoutUtils.setHeight(5, .03);
             layoutUtils.setHeight(6, .15);
 
-            layoutUtils.setTopMargin(0, .03);
-            layoutUtils.setTopMargin(1, .03);
-            layoutUtils.setTopMargin(2, .03);
-            layoutUtils.setTopMargin(3, .03);
-            layoutUtils.setTopMargin(4, .02);
-            layoutUtils.setTopMargin(5, .03);
-            layoutUtils.setTopMargin(6, .02);
+            layoutUtils.setTopMargin(0, .02);
+            layoutUtils.setTopMargin(1, .02);
+            layoutUtils.setTopMargin(2, .02);
+            layoutUtils.setTopMargin(3, .02);
+            layoutUtils.setTopMargin(4, .01);
+            layoutUtils.setTopMargin(5, .02);
+            layoutUtils.setTopMargin(6, .01);
 
             layoutUtils.setViewDimensionsHeight(titleAndIcon, 0);
             layoutUtils.setViewDimensionsHeight(categorybar, 1);
             layoutUtils.setViewDimensionsHeight(main, 2);
             layoutUtils.setViewDimensionsHeight(justArrivedRow, 3);
+            layoutUtils.setTextViewDimensions(justArrivedLL, 3);
+          //  layoutUtils.setViewDimensionsHeight(justArrivedLL, 3);
             layoutUtils.setViewDimensionsHeight(justArrivedThumbs, 4);
-            layoutUtils.setViewDimensionsHeight(trendingRow, 5);
+            layoutUtils.setViewTopMargins(trendingRow, 5);
+            //  layoutUtils.setViewDimensionsHeight(trendingRow, 5);
             layoutUtils.setViewDimensionsHeight(trendingThumbsRow, 6);
+
+            layoutUtils.setViewDimensionsHeight(mainLL, 2);
+         //   layoutUtils.setViewDimensionsHeight(justArrivedLL, 3);
+            layoutUtils.setViewDimensionsHeight(justArrivedThumbsLL, 4);
+          //  layoutUtils.setViewDimensionsHeight(trendingLL, 5);
+            layoutUtils.setViewDimensionsHeight(trendingThumbsLL, 6);
                
 
             TextView[] topRowText = new TextView[5];
@@ -89,10 +107,55 @@ namespace DigiDad_Android
             ImageView[] topRow = new ImageView[4];
 
 
-            topRow[0] = (ImageView) FindViewById(Resource.Id.imageView1);
-            topRow[1] = (ImageView)FindViewById(Resource.Id.imageView2);
-            topRow[2] = (ImageView)FindViewById(Resource.Id.imageView3);
-            topRow[3] = (ImageView)FindViewById(Resource.Id.imageView4);
+            topRow[0] = (ImageView) FindViewById(Resource.Id.homeCookingImage1);
+
+            topRow[0].Click += delegate
+            {
+
+                intent = new Intent(this, typeof(Explore));
+
+                intent.PutExtra("ActiveView", "Cooking");
+                StartActivity(intent);
+                return;
+                
+
+            };
+            topRow[1] = (ImageView)FindViewById(Resource.Id.homeHomeworkImage1);
+            topRow[1].Click += delegate
+            {
+
+                intent = new Intent(this, typeof(Explore));
+
+                intent.PutExtra("ActiveView", "Homework");
+                StartActivity(intent);
+                return;
+
+
+            };
+            topRow[2] = (ImageView)FindViewById(Resource.Id.homeSwimmingImage1);
+            topRow[2].Click += delegate
+            {
+
+                intent = new Intent(this, typeof(Explore));
+
+                intent.PutExtra("ActiveView", "Swimming");
+                StartActivity(intent);
+                return;
+
+
+            };
+            topRow[3] = (ImageView)FindViewById(Resource.Id.homeDatingImage1);
+            topRow[3].Click += delegate
+            {
+
+                intent = new Intent(this, typeof(Explore));
+
+                intent.PutExtra("ActiveView", "Dating");
+                StartActivity(intent);
+                return;
+
+
+            };
             foreach (View view in topRow)
             {
 

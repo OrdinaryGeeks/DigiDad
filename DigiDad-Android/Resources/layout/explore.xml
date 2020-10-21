@@ -164,19 +164,19 @@
                android:layout_width="match_parent"
                     android:layout_height="350px"
                     android:layout_marginTop="20px"
-                    android:id="@+id/imageView2" />
+                    android:id="@+id/homeworkExplore" />
                 <ImageView
                     android:src="@mipmap/swimming"
                          android:layout_width="match_parent"
                     android:layout_height="350px"
                      android:layout_marginTop="20px"
-                    android:id="@+id/imageView3" />
+                    android:id="@+id/swimmingExplore" />
                 <ImageView
                     android:src= "@mipmap/dating"
                              android:layout_width="match_parent"
                     android:layout_height="350px"
-                    
-                    android:id="@+id/imageView4" />
+                    android:layout_marginTop="20px"
+                    android:id="@+id/datingExplore" />
         
 
 
@@ -253,7 +253,24 @@
             android:layout_height="wrap_content"
             android:id="@+id/linearLayout8" 
             >
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:minWidth="25px"
+                            android:minHeight="25px"
+                            android:layout_marginLeft="40px"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/linearLayout13" >
+                            <ImageView
+                                android:src="@mipmap/backarrow"
+                                android:layout_width="50px"
+                                android:layout_height="50px"
+                                android:layout_marginTop="15px"
+                                android:textAlignment="center"
+                                 android:visibility="gone"
+                                android:id="@+id/exploreBackArrow" />
          
+                       
                 <TextView
                     android:text="DDAT-APP!"
                     android:layout_marginLeft="40px"
@@ -266,7 +283,7 @@
         
 
             
-
+                            </LinearLayout>
                                        
             </LinearLayout>
             </LinearLayout>
@@ -319,42 +336,42 @@
                 android:layout_width="300px"
                 android:layout_height="300px"
                 android:src="@mipmap/ironman"
-                android:id="@+id/imageView18" />
+                android:id="@+id/exploreGridImage1" />
             <ImageView
                 android:layout_column="1"
                 android:layout_row="0"
                    android:layout_width="300px"
                 android:layout_height="300px"
                 android:src="@mipmap/mickey"
-                android:id="@+id/imageView19" />
+                android:id="@+id/exploreGridImage2" />
             <ImageView
                 android:layout_column="2"
                 android:layout_row="0"
                    android:layout_width="300px"
                 android:layout_height="300px"
                 android:src="@mipmap/swimming"
-                android:id="@+id/imageView20" />
+                android:id="@+id/exploreGridImage3" />
             <ImageView
                 android:layout_column="0"
                 android:layout_row="1"
                    android:layout_width="300px"
                 android:layout_height="300px"
                 android:src="@mipmap/cooking"
-                android:id="@+id/imageView21" />
+                android:id="@+id/exploreGridImage4" />
             <ImageView
                 android:layout_column="1"
                 android:layout_row="1"
                    android:layout_width="300px"
                 android:layout_height="300px"
                 android:src="@mipmap/homework"
-                android:id="@+id/imageView22" />
+                android:id="@+id/exploreGridImage5" />
             <ImageView
                     android:layout_column="2"
                 android:layout_row="1"
                    android:layout_width="300px"
                 android:layout_height="300px"
                 android:src="@mipmap/thor"
-                android:id="@+id/imageView23" />
+                android:id="@+id/exploreGridImage6" />
 
 
 

@@ -72,6 +72,68 @@ namespace DigiDad_Android
 
 
         }
+
+        public void setVideoThumbnailTextLocation(VideoThumbnailedView v)
+        {
+            int[] location = new int[2];
+            int[] location2 = new int[2];
+            v.GetLocationOnScreen(location);
+            v.GetLocationInWindow(location2);
+
+
+            int width = v.LayoutParameters.Width;
+
+            v.setTextLocation(location[0] + 300, location[1] + 300);
+          //  v.setTextLocation(int.Parse((((location2[0] + v.Width)) - v.textWidth -30).ToString()), location2[1]  - int.Parse(v.textHeight.ToString()) -10);
+            v.setTextLocation(int.Parse((v.Width- v.textWidth -20).ToString()), (v.Height) - 50 - int.Parse(Math.Ceiling(v.textHeight).ToString()));
+
+
+
+
+        }
+        public void setThumbnailTextLocation(ThumbnailedView v)
+        {
+            int[] location = new int[2];
+            int[] location2 = new int[2];
+            v.GetLocationOnScreen(location);
+            v.GetLocationInWindow(location2);
+
+
+            int width = v.LayoutParameters.Width;
+
+            v.setTextLocation(location[0] + 300, location[1] + 300);
+            //   v.setTextLocation(int.Parse((Math.Ceiling(((location2[0] + v.Width) / 2) - v.textWidth / 2).ToString())), location2[1]);
+
+            v.setTextLocation(int.Parse((Math.Ceiling(((location2[0] + v.Width) / 2) - v.textWidth / 2).ToString())), v.Height/2);
+
+
+
+        }
+        public void setViewTextLocation(ThumbnailedView v)
+        {
+          //  int[] location = new int[2];
+            int[] location2 = new int[2];
+          //  v.GetLocationOnScreen(location);
+            v.GetLocationInWindow(location2);
+
+
+            int width = v.LayoutParameters.Width;
+
+            // v.setTextLocation(location[0] +300, location[1] +300);
+            v.setTextLocation(int.Parse((Math.Ceiling(((location2[0] + v.Width) / 2) - v.textWidth / 2).ToString())), 0);
+
+
+
+
+        }
+        public void setThumbnailImageViewDimensionsHeight(ThumbnailedView v, int heightIndex)
+        {
+
+            v.LayoutParameters.Height = getHeightSize(heightIndex);
+            v.setWidthAndHeight(v.LayoutParameters.Height, v.LayoutParameters.Height);
+
+        }
+
         public void setHeight(int heightIndex, double percentage)
         {
             heightEachSize[heightIndex] = getIntSizeFromPercentage(height, percentage);
@@ -81,6 +143,21 @@ namespace DigiDad_Android
         public void setTopMargin(int marginIndex, double percentage)
         {
             topMarginAmounts[marginIndex] = getIntSizeFromPercentage(height, percentage);
+        }
+
+        public void setImageViewDimensionsHeight(View v, int heightIndex)
+        {
+
+            v.LayoutParameters.Height = getHeightSize(heightIndex);
+
+        }
+        public void setGoneViewMarginsToZero(View v)
+        {
+
+            MarginLayoutParams mlp = (MarginLayoutParams)v.LayoutParameters;
+
+            mlp.SetMargins(0, 0, 0, 0);
+
         }
         public void setViewDimensionsHeight(View v, int heightIndex)
         {
@@ -112,6 +189,9 @@ namespace DigiDad_Android
             mlp.TopMargin = getTopMargin(heightIndex);
             mlp.Height = getHeightSize(heightIndex)- mlp.TopMargin ;
             mlp.Width = getHeightSize(heightIndex) - mlp.TopMargin ;
+
+            mlp.LeftMargin = 10;
+            mlp.RightMargin = 10;
             v.LayoutParameters = mlp;
         }
         public void setTextViewDimensions(View v, int heightIndex)

@@ -16,17 +16,7 @@
         android:layout_height="wrap_content"
         
         android:id="@+id/linearLayout1" >
-        <android.support.v7.widget.Toolbar
-            android:minWidth="25px"
-            android:minHeight="25px"
-            
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-              android:elevation="4dp"
-   android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-   app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-            android:id="@+id/toolbar1"
-             android:background="#4CA0F0"/>
+   
         <LinearLayout
                 android:background="#4CA0F0"
             android:orientation="vertical"
@@ -109,17 +99,17 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:id="@+id/linearLayout11" >
-                <ImageView
+                <ImageView android:contentDescription="fake"
                     android:src="@android:drawable/ic_menu_camera"
                     android:layout_width="95px"
                     android:layout_height="95px"
                     android:id="@+id/imageView15" />
-                <ImageView
+                <ImageView android:contentDescription="fake"
                     android:src="@android:drawable/ic_search_category_default"
                     android:layout_width="95px"
                     android:layout_height="95px"
                     android:id="@+id/imageView16" />
-                <ImageView
+                <ImageView android:contentDescription="fake"
                     android:src="@mipmap/profile"
                     android:layout_width="95px"
                     android:layout_height="95px"
@@ -167,7 +157,7 @@
                 android:id="@+id/constraintLayout4" >
         
         
-            <ImageView
+            <ImageView android:contentDescription="fake"
                 android:src="@mipmap/ironman"
                 android:layout_width="125px"
                 android:layout_height="125px"
@@ -185,7 +175,7 @@
                 android:id="@+id/textView14" 
                   app:layout_constraintLeft_toRightOf="@+id/imageView18"  
                     />
-            <ImageView
+            <ImageView android:contentDescription="fake"
                 android:src="@mipmap/cooking"
                 android:layout_width="250px"
                 android:layout_height="250px" 
@@ -215,7 +205,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/constraintLayout5">
-            <ImageView
+            <ImageView android:contentDescription="fake"
                 android:src="@mipmap/profile"
                 android:layout_width="125px"
                 android:layout_height="125px"
@@ -231,7 +221,7 @@
                 android:id="@+id/textView16"      
                 app:layout_constraintLeft_toRightOf="@+id/imageView20"  
                     />
-            <ImageView
+            <ImageView android:contentDescription="fake"
                 android:src="@mipmap/dating"
                 android:layout_width="250px"
                 android:layout_height="250px"
@@ -250,7 +240,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/constraintLayout6" >
-            <ImageView
+            <ImageView android:contentDescription="fake"
                 android:src="@mipmap/profile"
                 android:layout_width="125px"
                 android:layout_height="125px"
@@ -267,7 +257,7 @@
                 android:id="@+id/textView17"
                          app:layout_constraintLeft_toRightOf="@+id/imageView21"  
                     />
-            <ImageView
+            <ImageView android:contentDescription="fake"
                 android:src="@mipmap/homework"
                 android:layout_width="250px"
                 android:layout_height="250px"
@@ -287,7 +277,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/constraintLayout7" >
-            <ImageView
+            <ImageView android:contentDescription="fake"
                 android:src="@mipmap/profile"
                 android:layout_width="125px"
                 android:layout_height="125px"
@@ -305,7 +295,7 @@
                 android:id="@+id/textView18" 
                 app:layout_constraintLeft_toRightOf="@+id/imageView22"  
                     />
-            <ImageView
+            <ImageView android:contentDescription="fake"
                 android:src="@mipmap/swimming"
                 android:layout_width="250px"
                 android:layout_height="250px"
@@ -325,7 +315,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/constraintLayout8" >
-            <ImageView
+            <ImageView android:contentDescription="fake"
                   android:src="@mipmap/profile"
                 android:layout_width="125px"
                 android:layout_height="125px"
@@ -343,7 +333,7 @@
                 android:id="@+id/textView19"
                 app:layout_constraintLeft_toRightOf="@+id/imageView23"  
                     />
-            <ImageView
+            <ImageView android:contentDescription="fake"
                 android:src="@mipmap/cooking"
                 android:layout_width="250px"
                 android:layout_height="250px"

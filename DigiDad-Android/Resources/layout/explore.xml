@@ -5,29 +5,39 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-     android:background="#000"
+    android:background="#000"
    >
+
+   
     <LinearLayout
         
         android:orientation="vertical"
-        android:background="#000"
+     android:background="#000"
         android:minWidth="25px"
         android:minHeight="25px"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         
         android:id="@+id/explore1" >
-        <android.support.v7.widget.Toolbar
+                 <LinearLayout
+            android:orientation="vertical"
             android:minWidth="25px"
             android:minHeight="25px"
-            
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-              android:elevation="4dp"
-   android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-   app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-            android:id="@+id/toolbar1"
-             android:background="#4CA0F0"/>
+            android:id="@+id/linearLayout14"
+              android:background="#4CA0F0">
+
+
+          <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+             android:background="#4CA0F0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/exploreTopBar">
+     
         <LinearLayout
              android:paddingBottom="40px"
                 android:background="#4CA0F0"
@@ -36,7 +46,7 @@
             android:minHeight="25px"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/linearLayout12" >
+            android:id="@+id/exploreLLTop1" >
         
         <android.support.constraint.ConstraintLayout
             android:minWidth="25px"
@@ -44,7 +54,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
                android:background="#4CA0F0"
-            android:id="@+id/constraintLayout3" >
+            android:id="@+id/exploreTitleAndIcons" >
 
        
         
@@ -55,7 +65,7 @@
                android:background="#4CA0F0"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:id="@+id/linearLayout10">
+            android:id="@+id/explorelinearLayout10">
         
         <LinearLayout
                android:background="#4CA0F0"
@@ -64,7 +74,7 @@
             android:minHeight="25px"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/linearLayout8" 
+            android:id="@+id/explorelinearLayout8" 
             >
             <LinearLayout
                 android:orientation="vertical"
@@ -72,7 +82,7 @@
                 android:minHeight="25px"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/linearLayout9" >
+                android:id="@+id/explorelinearLayout9" >
                 <TextView
                     android:text="DDAT-APP!"
                     android:layout_marginLeft="40px"
@@ -81,26 +91,25 @@
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/textView11" />
+                    android:id="@+id/exploretextView11" />
              <TextView
                     android:text="Digi-Dad Advice Anytime"
                     android:layout_marginLeft="40px"
                     android:layout_marginRight="40px"
-                                android:paddingBottom="20px"
+                    android:paddingBottom="20px"
                     android:textSize="20px"
                     android:textColor="@android:color/white"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:layout_width="match_parent"
                     android:layout_height="40px"
-                    android:id="@+id/textView12" />
+                    android:id="@+id/exploretextView12" />
 
 
                 </LinearLayout>
 
             
-
-                                       
-            </LinearLayout>
+</LinearLayout>
+        
             </LinearLayout>
                                     <LinearLayout
                          app:layout_constraintEnd_toEndOf="parent"
@@ -111,21 +120,21 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:id="@+id/linearLayout11" >
-                <ImageView
+                <ImageView android:contentDescription="fake"
                     android:src="@android:drawable/ic_menu_camera"
                     android:layout_width="95px"
                     android:layout_height="95px"
-                    android:id="@+id/imageView15" />
-                <ImageView
+                    android:id="@+id/exploreimageView15" />
+                <ImageView android:contentDescription="fake"
                     android:src="@android:drawable/ic_search_category_default"
                     android:layout_width="95px"
                     android:layout_height="95px"
-                    android:id="@+id/imageView16" />
-                <ImageView
+                    android:id="@+id/exploreimageView16" />
+                <ImageView android:contentDescription="fake"
                     android:src="@mipmap/profile"
                     android:layout_width="95px"
                     android:layout_height="95px"
-                    android:id="@+id/imageView17" />
+                    android:id="@+id/exploreimageView17" />
 
 
 
@@ -133,8 +142,9 @@
 
                         </LinearLayout>
                  </android.support.constraint.ConstraintLayout>
-        
-           </LinearLayout>
+        </LinearLayout>
+                           </LinearLayout>            
+            </LinearLayout>
         <ScrollView
             android:layout_marginTop="40px"
             android:minWidth="25px"
@@ -154,24 +164,34 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/linearLayout2" >
-                <ImageView
+                <AbsoluteLayout
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/absoluteLayout1" >
+
+                <DigiDad_Android.ThumbnailedView
+                       
+                        android:contentDescription="fake"
                     android:src="@mipmap/cooking"
                     android:layout_width="match_parent"
                     android:layout_height="350px"
                     android:id="@+id/cookingExplore"/>
-                <ImageView
+                    </AbsoluteLayout>
+                <DigiDad_Android.ThumbnailedView android:contentDescription="fake"
                     android:src="@mipmap/homework"
                android:layout_width="match_parent"
                     android:layout_height="350px"
                     android:layout_marginTop="20px"
                     android:id="@+id/homeworkExplore" />
-                <ImageView
+                <DigiDad_Android.ThumbnailedView android:contentDescription="fake"
                     android:src="@mipmap/swimming"
                          android:layout_width="match_parent"
                     android:layout_height="350px"
                      android:layout_marginTop="20px"
                     android:id="@+id/swimmingExplore" />
-                <ImageView
+                <DigiDad_Android.ThumbnailedView android:contentDescription="fake"
                     android:src= "@mipmap/dating"
                              android:layout_width="match_parent"
                     android:layout_height="350px"
@@ -204,17 +224,14 @@
         android:layout_height="wrap_content"
         
         android:id="@+id/explore2" >
-        <android.support.v7.widget.Toolbar
+        <LinearLayout
+            android:orientation="vertical"
             android:minWidth="25px"
             android:minHeight="25px"
-            
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-              android:elevation="4dp"
-   android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-   app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-            android:id="@+id/toolbar1"
-             android:background="#4CA0F0"/>
+            android:id="@+id/linearLayout15" >
+     
         <LinearLayout
              android:paddingBottom="40px"
                 android:background="#4CA0F0"
@@ -223,7 +240,7 @@
             android:minHeight="25px"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/linearLayout12" >
+            android:id="@+id/explore2linearLayout12" >
         
         <android.support.constraint.ConstraintLayout
             android:minWidth="25px"
@@ -231,7 +248,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
                android:background="#4CA0F0"
-            android:id="@+id/constraintLayout3" >
+            android:id="@+id/explore2constraintLayout3" >
 
        
         
@@ -242,7 +259,7 @@
                android:background="#4CA0F0"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:id="@+id/linearLayout10">
+            android:id="@+id/explore2linearLayout10">
         
         <LinearLayout
                android:background="#4CA0F0"
@@ -251,7 +268,7 @@
             android:minHeight="25px"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/linearLayout8" 
+            android:id="@+id/explore2linearLayout8" 
             >
                         <LinearLayout
                             android:orientation="horizontal"
@@ -260,12 +277,12 @@
                             android:layout_marginLeft="40px"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:id="@+id/linearLayout13" >
-                            <ImageView
+                            android:id="@+id/explore2linearLayout13" >
+                            <ImageView android:contentDescription="fake"
                                 android:src="@mipmap/backarrow"
                                 android:layout_width="50px"
                                 android:layout_height="50px"
-                                android:layout_marginTop="15px"
+                                android:layout_gravity="center_vertical"
                                 android:textAlignment="center"
                                  android:visibility="gone"
                                 android:id="@+id/exploreBackArrow" />
@@ -279,7 +296,7 @@
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/exploreTitleText" />
+                    android:id="@+id/explore2TitleText" />
         
 
             
@@ -295,22 +312,22 @@
                         android:minHeight="25px"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:id="@+id/linearLayout11" >
-                <ImageView
+                        android:id="@+id/explore2linearLayout11" >
+                <ImageView android:contentDescription="fake"
                     android:src="@android:drawable/ic_menu_camera"
                     android:layout_width="95px"
                     android:layout_height="95px"
-                    android:id="@+id/imageView15" />
-                <ImageView
+                    android:id="@+id/explore2imageView15" />
+                <ImageView android:contentDescription="fake"
                     android:src="@android:drawable/ic_search_category_default"
                     android:layout_width="95px"
                     android:layout_height="95px"
-                    android:id="@+id/imageView16" />
-                <ImageView
+                    android:id="@+id/explore2imageView16" />
+                <ImageView android:contentDescription="fake"
                     android:src="@mipmap/profile"
                     android:layout_width="95px"
                     android:layout_height="95px"
-                    android:id="@+id/imageView17" />
+                    android:id="@+id/explore2imageView17" />
 
 
 
@@ -320,58 +337,145 @@
                  </android.support.constraint.ConstraintLayout>
         
            </LinearLayout>
+            </LinearLayout>
     <GridLayout
         android:minWidth="25px"
         android:minHeight="25px"
         android:columnCount="3"
             android:visibility="gone"
-        android:rowCount="2"
+        android:rowCount="6"
         android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/exploreGridLayout" >
-            <ImageView
+            <DigiDad_Android.VideoThumbnailedView android:contentDescription="fake"
                 android:layout_column="0"
                 android:layout_row="0"
                 android:layout_width="300px"
                 android:layout_height="300px"
                 android:src="@mipmap/ironman"
                 android:id="@+id/exploreGridImage1" />
-            <ImageView
+            <DigiDad_Android.VideoThumbnailedView android:contentDescription="fake"
                 android:layout_column="1"
                 android:layout_row="0"
                    android:layout_width="300px"
                 android:layout_height="300px"
                 android:src="@mipmap/mickey"
                 android:id="@+id/exploreGridImage2" />
-            <ImageView
+            <DigiDad_Android.VideoThumbnailedView android:contentDescription="fake"
                 android:layout_column="2"
                 android:layout_row="0"
                    android:layout_width="300px"
                 android:layout_height="300px"
                 android:src="@mipmap/swimming"
                 android:id="@+id/exploreGridImage3" />
-            <ImageView
+            <DigiDad_Android.VideoThumbnailedView android:contentDescription="fake"
                 android:layout_column="0"
                 android:layout_row="1"
                    android:layout_width="300px"
                 android:layout_height="300px"
                 android:src="@mipmap/cooking"
                 android:id="@+id/exploreGridImage4" />
-            <ImageView
+            <DigiDad_Android.VideoThumbnailedView android:contentDescription="fake"
                 android:layout_column="1"
                 android:layout_row="1"
                    android:layout_width="300px"
                 android:layout_height="300px"
                 android:src="@mipmap/homework"
                 android:id="@+id/exploreGridImage5" />
-            <ImageView
+            <DigiDad_Android.VideoThumbnailedView android:contentDescription="fake"
                     android:layout_column="2"
                 android:layout_row="1"
                    android:layout_width="300px"
                 android:layout_height="300px"
                 android:src="@mipmap/thor"
                 android:id="@+id/exploreGridImage6" />
+
+             <DigiDad_Android.VideoThumbnailedView android:contentDescription="fake"
+                android:layout_column="0"
+                android:layout_row="3"
+                android:layout_width="300px"
+                android:layout_height="300px"
+                android:src="@mipmap/ironman"
+                android:id="@+id/exploreGridImage7" />
+            <DigiDad_Android.VideoThumbnailedView android:contentDescription="fake"
+                android:layout_column="1"
+                android:layout_row="3"
+                   android:layout_width="300px"
+                android:layout_height="300px"
+                android:src="@mipmap/mickey"
+                android:id="@+id/exploreGridImage8" />
+            <DigiDad_Android.VideoThumbnailedView android:contentDescription="fake"
+                android:layout_column="2"
+                android:layout_row="3"
+                   android:layout_width="300px"
+                android:layout_height="300px"
+                android:src="@mipmap/swimming"
+                android:id="@+id/exploreGridImage9" />
+            <DigiDad_Android.VideoThumbnailedView android:contentDescription="fake"
+                android:layout_column="0"
+                android:layout_row="4"
+                   android:layout_width="300px"
+                android:layout_height="300px"
+                android:src="@mipmap/cooking"
+                android:id="@+id/exploreGridImage10" />
+            <DigiDad_Android.VideoThumbnailedView android:contentDescription="fake"
+                android:layout_column="1"
+                android:layout_row="4"
+                   android:layout_width="300px"
+                android:layout_height="300px"
+                android:src="@mipmap/homework"
+                android:id="@+id/exploreGridImage11" />
+            <DigiDad_Android.VideoThumbnailedView android:contentDescription="fake"
+                    android:layout_column="2"
+                android:layout_row="4"
+                   android:layout_width="300px"
+                android:layout_height="300px"
+                android:src="@mipmap/thor"
+                android:id="@+id/exploreGridImage12" />
+
+ <DigiDad_Android.VideoThumbnailedView android:contentDescription="fake"
+                android:layout_column="0"
+                android:layout_row="5"
+                android:layout_width="300px"
+                android:layout_height="300px"
+                android:src="@mipmap/ironman"
+                android:id="@+id/exploreGridImage13" />
+            <DigiDad_Android.VideoThumbnailedView android:contentDescription="fake"
+                android:layout_column="1"
+                android:layout_row="5"
+                   android:layout_width="300px"
+                android:layout_height="300px"
+                android:src="@mipmap/mickey"
+                android:id="@+id/exploreGridImage14" />
+            <DigiDad_Android.VideoThumbnailedView android:contentDescription="fake"
+                android:layout_column="2"
+                android:layout_row="5"
+                   android:layout_width="300px"
+                android:layout_height="300px"
+                android:src="@mipmap/swimming"
+                android:id="@+id/exploreGridImage15" />
+            <DigiDad_Android.VideoThumbnailedView android:contentDescription="fake"
+                android:layout_column="0"
+                android:layout_row="1"
+                   android:layout_width="300px"
+                android:layout_height="300px"
+                android:src="@mipmap/cooking"
+                android:id="@+id/exploreGridImage16" />
+            <DigiDad_Android.VideoThumbnailedView android:contentDescription="fake"
+                android:layout_column="1"
+                android:layout_row="1"
+                   android:layout_width="300px"
+                android:layout_height="300px"
+                android:src="@mipmap/homework"
+                android:id="@+id/exploreGridImage17" />
+            <DigiDad_Android.VideoThumbnailedView android:contentDescription="fake"
+                    android:layout_column="2"
+                android:layout_row="1"
+                   android:layout_width="300px"
+                android:layout_height="300px"
+                android:src="@mipmap/thor"
+                android:id="@+id/exploreGridImage18" />
 
 
 

@@ -7,6 +7,13 @@
     android:layout_height="match_parent"
      android:background="#000"
    >
+    <ScrollView
+       
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView1" >
     <LinearLayout
         
         android:orientation="vertical"
@@ -25,18 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/homeTopBar">
-        
-        <android.support.v7.widget.Toolbar
-            android:minWidth="25px"
-            android:minHeight="25px"
-            
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-             
-   android:theme="@style/Digidad"
-   app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-            android:id="@+id/toolbar1"
-             android:background="#4CA0F0"/>
+       
         <LinearLayout
                 android:background="#4CA0F0"
             android:orientation="vertical"
@@ -119,17 +115,17 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:id="@+id/linearLayout11" >
-                <ImageView
+                <ImageView android:contentDescription="fake"
                     android:src="@android:drawable/ic_menu_camera"
                     android:layout_width="95px"
                     android:layout_height="95px"
                     android:id="@+id/imageView15" />
-                <ImageView
+                <ImageView android:contentDescription="fake"
                     android:src="@android:drawable/ic_search_category_default"
                     android:layout_width="95px"
                     android:layout_height="95px"
                     android:id="@+id/imageView16" />
-                <ImageView
+                <ImageView android:contentDescription="fake"
                     android:src="@mipmap/profile"
                     android:layout_width="95px"
                     android:layout_height="95px"
@@ -166,7 +162,7 @@
                     android:layout_marginLeft="40px"
                     android:layout_marginRight="40px"
                     android:textColor="@android:color/white"
-                android:id="@+id/textView1" />
+                android:id="@+id/allText" />
                 <TextView
                     android:text="Cooking"
                     android:textAppearance="?android:attr/textAppearanceMedium"
@@ -175,7 +171,7 @@
                                    android:layout_marginLeft="40px"
                     android:layout_marginRight="40px"
                       android:textColor="@android:color/white"
-                    android:id="@+id/textView2" />
+                    android:id="@+id/cookingText" />
                 <TextView
                     android:text="Homework"
                     android:textAppearance="?android:attr/textAppearanceMedium"
@@ -184,7 +180,7 @@
                                    android:layout_marginLeft="40px"
                       android:textColor="@android:color/white"
                     android:layout_marginRight="40px"
-                    android:id="@+id/textView3" />
+                    android:id="@+id/homeworkText" />
                 <TextView
                     android:text="Swimming"
                     android:textAppearance="?android:attr/textAppearanceMedium"
@@ -193,14 +189,14 @@
                                    android:layout_marginLeft="40px"
                       android:textColor="@android:color/white"
                     android:layout_marginRight="40px"
-                    android:id="@+id/textView4" />
+                    android:id="@+id/swimmingText" />
                 <TextView
                     android:text="Dating"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                       android:textColor="@android:color/white"
-                    android:id="@+id/textView10" />
+                    android:id="@+id/datingText" />
 
    
             </LinearLayout>
@@ -224,23 +220,23 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:id="@+id/homeMainLL" >
-                <ImageView
+                <ImageView android:contentDescription="fake"
                     android:src="@mipmap/cooking"
                     android:layout_width="350px"
                     android:layout_height="350px"
                     android:id="@+id/homeCookingImage1"
                     />
-                <ImageView
+                <ImageView android:contentDescription="fake"
                     android:src="@mipmap/homework"
                android:layout_width="350px"
                     android:layout_height="350px"
                     android:id="@+id/homeHomeworkImage1" />
-                <ImageView
+                <ImageView android:contentDescription="fake"
                     android:src="@mipmap/swimming"
                          android:layout_width="350px"
                     android:layout_height="350px"
                     android:id="@+id/homeSwimmingImage1" />
-                <ImageView
+                <ImageView android:contentDescription="fake"
                     android:src= "@mipmap/dating"
                              android:layout_width="350px"
                     android:layout_height="350px"
@@ -266,7 +262,7 @@
             android:minWidth="25px"
             android:minHeight="25px"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
            
             android:id="@+id/homeJustArrivedRow" >
 
@@ -274,21 +270,19 @@
             android:orientation="horizontal"
             android:minWidth="25px"
             android:minHeight="25px"
-            android:layout_width="200px"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/homeJustArrivedRowLL">
                 <TextView
                      android:textAlignment="center"
             android:text="Just Arrived"
-            android:textSize="30px"
-            app:autoSizeTextType="uniform"
-            app:autoSizeMinTextSize="30px"
-            app:autoSizeMaxTextSize="300px"
+            android:textSize="40px"
+            
             android:layout_marginLeft="15px"
-            android:lines="1"
+           
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:layout_width="match_parent"
-            android:layout_height="100px"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
   android:textColor="@android:color/white"     
                     android:id="@+id/homeJustArrivedText" />
                 
@@ -308,7 +302,7 @@
                             android:text="More"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="wrap_content"
-                android:textSize="30px"
+                android:textSize="40px"
   android:textColor="@android:color/white"
                     android:layout_height="match_parent"
                     android:id="@+id/textView7" />
@@ -336,28 +330,28 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:id="@+id/homeJustArrivedThumbsRowLL" >
-            <ImageView
+            <ImageView android:contentDescription="fake"
                 android:src="@mipmap/mickey"
                     
                         android:layout_width="250px"
                     android:layout_height="250px"
                 android:id="@+id/imageView6" />
-            <ImageView
+            <ImageView android:contentDescription="fake"
                 android:src="@mipmap/cmarvel"
                                 android:layout_width="250px"
                     android:layout_height="250px"
                 android:id="@+id/imageView7" />
-            <ImageView
+            <ImageView android:contentDescription="fake"
                 android:src="@mipmap/randoheroes"
                               android:layout_width="250px"
                     android:layout_height="250px"
                 android:id="@+id/imageView8" />
-            <ImageView
+            <ImageView android:contentDescription="fake"
                 android:src="@mipmap/superhero1"
                             android:layout_width="250px"
                     android:layout_height="250px"
                 android:id="@+id/imageView9" />
-            <ImageView
+            <ImageView android:contentDescription="fake"
                 android:src="@mipmap/ironman"
                             android:layout_width="250px"
                     android:layout_height="250px"
@@ -387,7 +381,7 @@
             <TextView
                android:textAlignment="center"
             android:text="Trending"
-            android:textSize="30px"
+            android:textSize="40px"
             
             android:layout_marginLeft="15px"
             android:textAppearance="?android:attr/textAppearanceSmall"
@@ -409,7 +403,7 @@
                     android:text="More"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:layout_width="wrap_content"
-                android:textSize="30px"
+                android:textSize="40px"
                   android:textColor="@android:color/white"
                 android:layout_height="match_parent"
                 android:id="@+id/textView9" />
@@ -432,22 +426,22 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:id="@+id/homeTrendingThumbsRowLL" >
-                <ImageView
+                <ImageView android:contentDescription="fake"
                     android:src="@mipmap/butterfly1"
                            android:layout_width="250px"
                     android:layout_height="250px"
                     android:id="@+id/imageView11" />
-                <ImageView
+                <ImageView android:contentDescription="fake"
                     android:src="@mipmap/butterfly2"
                               android:layout_width="250px"
                     android:layout_height="250px"
                     android:id="@+id/imageView12" />
-                <ImageView
+                <ImageView android:contentDescription="fake"
                     android:src="@mipmap/butterfly3"
                              android:layout_width="250px"
                     android:layout_height="250px"
                     android:id="@+id/imageView13" />
-                <ImageView
+                <ImageView android:contentDescription="fake"
                     android:src="@mipmap/butterfly4"
                         android:layout_width="250px"
                     android:layout_height="250px"
@@ -465,7 +459,7 @@
 
         </LinearLayout>
 
-
+        </ScrollView>
 
 
     <android.support.design.widget.BottomNavigationView

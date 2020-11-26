@@ -25,10 +25,7 @@ namespace DigiDad_Android
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
 
-
-            SetSupportActionBar((Android.Support.V7.Widget.Toolbar)FindViewById(Resource.Id.toolbar1));
-
-
+            Window.SetStatusBarColor(new Android.Graphics.Color(76, 160, 240));
             var metrics = Resources.DisplayMetrics;
 
             float height = metrics.HeightPixels;
@@ -37,6 +34,8 @@ namespace DigiDad_Android
             SetContentView(Resource.Layout.inbox);
 
             BottomNavigationView navigationView = (BottomNavigationView)FindViewById(Resource.Id.navigation);
+
+            navigationView.SelectedItemId = Resource.Id.navigation_inbox;
             navigationView.SetOnNavigationItemSelectedListener(this);
 
         }

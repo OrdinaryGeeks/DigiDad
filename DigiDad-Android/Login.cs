@@ -26,12 +26,12 @@ namespace DigiDad_Android
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
 
+           
+            Window.RequestFeature(WindowFeatures.NoTitle);
+            Window.SetFlags(WindowManagerFlags.Fullscreen, WindowManagerFlags.Fullscreen);
 
-            SetSupportActionBar((Android.Support.V7.Widget.Toolbar)FindViewById(Resource.Id.toolbar1));
-
-
-        
-            var metrics = Resources.DisplayMetrics;
+            Window.DecorView.KeyboardNavigationCluster = false;
+                        var metrics = Resources.DisplayMetrics;
 
             int height = metrics.HeightPixels;
             int width = metrics.WidthPixels;
